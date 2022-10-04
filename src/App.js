@@ -5,7 +5,6 @@ import About from "./Components/About";
 import Bars from "./Components/Bars";
 import Treats from "./Components/Treats";
 import StaticMap from "./Components/StaticMap";
-import Map from "./Components/Map";
 import Prizes from "./Components/Prizes"
 import { Routes, Route } from "react-router-dom";
 import NavBar from './Components/NavBar';
@@ -14,9 +13,7 @@ import Age from './Components/Age';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        {/* <NavBar /> */}
-        
+      <div className="App">        
         <Age />
         <Routes>
           <Route exact path="/" element={ <Home /> } />
