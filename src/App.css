@@ -1,4 +1,9 @@
 /* general styles */
+:root {
+  --main-bg-color: black;
+  --header-color: #FF8B1F;
+  --accent-color: #C613E4;
+}
 
 * {
   box-sizing: border-box;
@@ -9,8 +14,11 @@ body {
   min-height: 100vh;
 }
 
-p, h1, h2, h3, label, li {
-  color: #F9F2CC;
+p, h1, h2, h3, label {
+  /* color: #F9F2CC; */
+  color: var(--header-color);
+  padding: 0px;
+  margin: 5px;
 }
 
 li {
@@ -19,10 +27,13 @@ li {
 
 .page-header {
   text-align: center;
-  color: #F0C034;
+  /* color: #F0C034; */
+  /* margin-top: 30px; */
+  margin: 30px 0px 20px 0px;
+  color: var(--header-color);
 }
 
-.page-div, .bars-div, .about-div {
+.page-div, .bars-div, .crawl-div {
   height: 100%;
   margin: 0 7% 0 7%;
 }
@@ -37,7 +48,7 @@ li {
 }
 
 .modal-body {
-  color: white;
+  color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,9 +101,13 @@ li {
 
 .navbar-div {
   display: flex;
-  justify-content: center;
-  background-color: #F9F2CC;
-  padding: 10px 0px 10px 0px;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  /* background-color: #F9F2CC; */
+  background-color: var(--accent-color);
+  padding: 20px 0px 20px 0px;
+
+
   /* margin: 0;
   padding: 0;
   position: sticky;
@@ -108,12 +123,13 @@ li {
 }
 
 .navbar-link {
-  padding: 15px;
+  padding: 8px;
   text-align: center;
 }
 
 a {
-  color: #4F4F4F;
+  /* color: #4F4F4F; */
+  color: whitesmoke;
   text-decoration: none;
   /* font-size: x-large; */
 }
@@ -121,7 +137,7 @@ a {
 /* bars component  */
 
 .logo-div {
-  /* background-color: white; */
+  /* background-color: whitesmoke; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -136,6 +152,8 @@ a {
   margin: 10px;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  max-width: 250px;
 }
 
 .checkbox-label {
@@ -146,7 +164,7 @@ a {
 }
 
 input[type="checkbox"] {
-  accent-color: #ffffff;
+  accent-color: black;
   margin-right: .5em;
 }
 
@@ -154,10 +172,18 @@ input[type="checkbox"] {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 5px solid #d2b48c;
+  /* border: 5px solid #d2b48c; */
+  border: 5px solid;
+  border-color: var(--accent-color);
+  background-color: whitesmoke;
 }
 
-
+.special {
+  font-style: italic;
+  /* color: var(--accent-color); */
+  color: whitesmoke;
+  margin: 5px;
+}
 /* prizes page */
 
 .prize-list {
@@ -166,11 +192,45 @@ input[type="checkbox"] {
   font-size: large;
 }
 
-
 /* about page */
+
+.crawl-list {
+  margin: 0px;
+}
+
+#check-in > li:before {
+  content: '🔮';
+  /* background-color: var(--accent-color); */
+  /* border-radius: 20%; */
+  margin-left: -25px;
+  margin-right: 10px;
+}
+
+#crawl > li:before {
+  content: '👻';
+  /* background-color: var(--accent-color); */
+  /* border-radius: 20%; */
+  margin-left: -25px;
+  margin-right: 10px;
+}
+
+#win > li:before {
+  content: '🎃';
+  /* background-color: var(--accent-color); */
+  /* border-radius: 20%; */
+  margin-left: -25px;
+  margin-right: 10px;
+}
+
 .crawl-list > li.list-item {
   margin: 0 0 15px 0;
+  /* color: var(--accent-color); */
+  color: whitesmoke;
   /* list-style-image: url(../src/cheers_24.png); */
+}
+
+.crawl-div {
+  margin-bottom: 100px;
 }
 
 /* .crawl-list {
@@ -212,8 +272,13 @@ input[type="checkbox"] {
   padding-bottom: 100px;
 }
 
+.map-listing-div > p {
+  margin: 10px;
+  font-size: large;
+}
+
 .bar-name {
-  color: white;
+  color: whitesmoke;
 }
 
 /* map page*/
@@ -229,4 +294,40 @@ input[type="checkbox"] {
 .map-icon {
   height: 25px;
   padding-right: 15px;
+}
+
+/* About the NNA page */
+.nna-div {
+  margin-bottom: 100px;
+}
+
+.about-nna-text {
+  padding: 5px;
+  margin: 20px;
+  color: whitesmoke;
+  font-style: italic;
+  text-align: center;
+}
+
+.nna-about-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.link-div {
+  margin: 10px 10px 30px 10px;
+}
+
+.about-img {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.about-mission {
+  text-align: center;
 }

@@ -4,7 +4,7 @@ import locations from "../locations";
 function Bars() {
     return (
         <div className="bars-div page-div">
-            <h1 className="page-header">Participating Businesses</h1>
+            <h1 className="page-header">Drink-or-Treat Stops</h1>
 
             <div className="logo-div">
             { locations.map(bar => {
@@ -15,9 +15,8 @@ function Bars() {
                                 <img src={ bar.logo } alt={ bar.alt } className="logo-img"></img>
                             </a>
 
-                            <label className="checkbox-label">
-                                <input type="checkbox" name="checkbox" />{ bar.name }
-                            </label>
+                            <h2>{ bar.name }</h2>
+                            <h4 className="special">{ bar.special }</h4>
                         </div>
                     </div>
                 )

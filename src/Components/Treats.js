@@ -4,7 +4,7 @@ import treat_locations from "../treat_locations";
 function Bars() {
     return (
         <div className="bars-div page-div">
-            <h1 className="page-header">Participating Businesses</h1>
+            <h1 className="page-header">Get Your Treats!</h1>
 
             <div className="logo-div">
             { treat_locations.map(treat => {
@@ -15,9 +15,8 @@ function Bars() {
                                 <img src={ treat.logo } alt={ treat.alt } className="logo-img"></img>
                             </a>
 
-                            <label className="checkbox-label">
-                                <input type="checkbox" name="checkbox" />{ treat.name }
-                            </label>
+                            <h2>{ treat.name }</h2>
+                            <h4 className="special">{ treat.special }</h4>
                         </div>
                     </div>
                 )

@@ -15,16 +15,29 @@ const locations = [
     // },
 
     {
-        name: "Bringle's Smoking Oasis",
-        address: '4901 Centennial Blvd., Nashville, Tennessee 37209',
-        website: "https://www.bringlessmokingoasis.com/",
-        logo: "../logos/Bringles.png",
-        logoAlt: "Bringles logo",
+        name: "The Silo Market",
+        website: "https://www.thesilomarket.com/",
+        logo: "../logos/silo_market.png",
+        logoAlt: "The Silo Market logo",
+        address: "5500 Centennial Blvd Suite A, Nashville, TN 37209",
         location: {
-            lat: 36.1624,
-            lng: -86.8470
+            lat: 36.1655,
+            lng: -86.8542
         },
-        special: '$2.00 off draft beers',
+        special: "$2.00 off draft beers"
+    },
+
+    {
+        name: "Southern Grist Brewing Co.",
+        website: "https://www.southerngristbrewing.com/",
+        logo: "../logos/southern_grist.jpg" ,
+        logoAlt: "Southern Grist logo",
+        address: '5012 Centennial Blvd., Nashville, Tennessee 37209',
+        location: {
+            lat: 36.1626,
+            lng: -86.8480
+        },
+        special: 'Mini swag pack giveaway',
         dogFriendly: "yes",
         patio: "yes"
     },
@@ -59,21 +72,6 @@ const locations = [
     //     patio: "yes"
     // },
 
-    {
-        name: "Fat Bottom Brewery",
-        website: "https://fatbottombrewing.com/",
-        logo: "../logos/Fat_Bottom_Logo.png",
-        logoAlt: "Fat Bottom Brewing logo",
-        address: '800 44th Ave. N., Nashville, Tennessee 37209',
-        location: {
-            lat: 36.1572,
-            lng: -86.83932
-        },
-        special: 'Half-price draft beers',
-        dogFriendly: "yes",
-        patio: "yes"
-    },
-
     // {
     //     name: "Frothy Monkey",
     //     website: "https://frothymonkey.com/nations/",
@@ -90,7 +88,7 @@ const locations = [
     // },
 
     {
-        name: "Harding House",
+        name: "Harding House Brewing Co.",
         website: "http://www.hardinghousebrew.com/",
         logo: "../logos/HH.png",
         logoAlt: "Harding House logo",
@@ -100,6 +98,21 @@ const locations = [
             lng: -86.8485
         },
         special: '$4.00 pints',
+        dogFriendly: "yes",
+        patio: "yes"
+    },
+
+    {
+        name: "Fat Bottom Brewing",
+        website: "https://fatbottombrewing.com/",
+        logo: "../logos/Fat_Bottom_Logo.png",
+        logoAlt: "Fat Bottom Brewing logo",
+        address: '800 44th Ave. N., Nashville, Tennessee 37209',
+        location: {
+            lat: 36.1572,
+            lng: -86.83932
+        },
+        special: 'Half-price draft beers',
         dogFriendly: "yes",
         patio: "yes"
     },
@@ -194,33 +207,24 @@ const locations = [
     //     patio: "yes"
     // },
 
+
+
     {
-        name: "Southern Grist Brewing Company",
-        website: "https://www.southerngristbrewing.com/",
-        logo: "../logos/southern_grist.jpg" ,
-        logoAlt: "Southern Grist logo",
-        address: '5012 Centennial Blvd., Nashville, Tennessee 37209',
+        name: "Bringle's Smoking Oasis",
+        address: '4901 Centennial Blvd., Nashville, Tennessee 37209',
+        website: "https://www.bringlessmokingoasis.com/",
+        logo: "../logos/Bringles.png",
+        logoAlt: "Bringles logo",
         location: {
-            lat: 36.1626,
-            lng: -86.8480
+            lat: 36.1624,
+            lng: -86.8470
         },
-        special: 'Add special here',
+        special: '$2.00 off draft beers',
         dogFriendly: "yes",
         patio: "yes"
     },
 
-    {
-        name: "The Silo Market",
-        website: "https://www.thesilomarket.com/",
-        logo: "../logos/silo_market.png",
-        logoAlt: "The Silo Market logo",
-        address: "5500 Centennial Blvd Suite A, Nashville, TN 37209",
-        location: {
-            lat: 36.1655,
-            lng: -86.8542
-        },
-        special: "$2.00 off draft beers"
-    }
+
 
     // {
     //     name: "The Centennial",

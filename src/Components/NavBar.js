@@ -26,7 +26,11 @@ function NavBar() {
                 </li> */}
 
                 <li className="navbar-link">
-                    <Link to="/about">Crawl!</Link>
+                    <Link to="/crawl">Crawl</Link>
+                </li>
+
+                <li className="navbar-link">
+                    <Link to="/nna">The NNA</Link>
                 </li>
 
             </ul>

@@ -22,7 +22,7 @@ const treat_locations = [
             lat: 36.1628,
             lng: -86.8461,
         },
-        special: "Free happy hour class on Friday, Oct. 21"
+        special: "Free happy hour class on Friday, Oct. 21 and free seven-day pass"
     },
 
     {
@@ -35,7 +35,7 @@ const treat_locations = [
             lat: 36.1574,
             lng: -86.8486,
         },
-        special: "TBD"
+        special: "Gift card for drawing"
     },
 
     {
